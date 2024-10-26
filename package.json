@@ -1,0 +1,44 @@
+{
+  "name": "discord-member-status-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that dynamically displays the real-time status of all members within a server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "build": "tsc && tsc-watch --onSuccess \"npm run build:prod\"",
+    "build:prod": "tsc --module commonjs --outDir dist",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write \"src//.{js,ts}\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coslynx/discord-member-status-bot.git"
+  },
+  "author": "coslynx",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.8.1",
+    "nodemon": "^2.0.20",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/discord.js": "^14.6.5",
+    "@types/dotenv": "^8.2.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.11.9",
+    "@types/winston": "^3.3.2",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
